@@ -11,9 +11,11 @@ printf("Você digitou os seguintes numeros %d, %d, %d\n", num1, num2, num3);
 
 if ((num1 < num2) && (num1 < num3)) { 
   menor = num1;
+  printf("O menor numero digitado foi %d\n", menor);
 } else {
   if (num2 < num3) {
    menor = num2;
+   printf("O menor numero digitado foi %d\n", menor);
   } else { 
     if ((num1 == num2) && (num1 == num3)) {
       printf("Não tem menor todos os números são iguais\n");
