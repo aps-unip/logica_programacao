@@ -1,4 +1,11 @@
-puts "Digite os 3 numeros com espaços em cada um deles\n"
-gets = num1, num2, num3
+puts "Informe 3 numeros"
+numeros = gets
 
-puts "Você digitou os seguintes números #{num1}, #{num2}, #{num3}\n"
+n = numeros.split.map(&:to_i).sort
+
+n_iguais = n[0] == n[1] &&  n[0] == n[2] && n[1] == n[2]
+
+menor_maior =  "O menor numero informado é #{n.first} e o maior numero é #{n.last}"
+iguais =   "Os tres numeros são iguais"
+
+puts n_iguais ? iguais : menor_maior
